@@ -1,4 +1,4 @@
-# 🚗 Ride Share App
+# 🚗 RideShare
 
 A modern ride-sharing mobile application built with Flutter. This app allows users to book rides, track drivers in real-time, and manage their ride history — just like Uber or Careem.
 
