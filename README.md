@@ -1,16 +1,48 @@
-# ride_share
+# 🚗 Ride Share App
 
-A new Flutter project.
+A modern ride-sharing mobile application built with Flutter. This app allows users to book rides, track drivers in real-time, and manage their ride history — just like Uber or Careem.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔐 **Authentication**
+  - Sign up / Sign in (Email, Google, Apple)
+  - Secure token-based authentication
+- 📍 **Real-Time Location Tracking**
+  - Live driver & passenger location updates
+  - Interactive map using Google Maps API
+- 🚘 **Ride Booking**
+  - Request a ride with pickup & drop-off
+  - See ride price estimates
+  - Cancel rides
+- 📞 **Driver & Passenger Communication**
+  - In-app messaging (or deep-link to phone call)
+- 💳 **Payment Integration**
+  - Cash, Credit Card, and Wallet support
+- 📊 **Ride History**
+  - View past rides and trip details
+- 🧑‍✈️ **Driver App (Optional)**
+  - Accept/Reject rides
+  - Start/End trip
+  - Earnings report
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Tech Stack
+
+| Layer          | Stack                            |
+|----------------|----------------------------------|
+| **Frontend**   | Flutter, Dart                    |
+| **Backend**    | Firebase / Node.js / Supabase    |
+| **Maps**       | Google Maps API / Mapbox         |
+| **State Mgmt** | Riverpod / Bloc / Cubit          |
+| **Auth**       | Firebase Auth / Supabase Auth    |
+| **Database**   | Firestore / Supabase / MongoDB   |
+| **Realtime**   | WebSockets / Firebase RTDB       |
+| **Push Notifs**| Firebase Cloud Messaging (FCM)   |
+
+---
+
+## 📦 Folder Structure (Clean Architecture)
+
