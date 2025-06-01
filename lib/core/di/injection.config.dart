@@ -11,18 +11,21 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
+import 'package:ride_share/core/di/di_module.dart' as _i354;
+import 'package:ride_share/core/networking/network_info/network_info.dart'
+    as _i978;
 
 extension GetItInjectableX on _i174.GetIt {
-// initializes the registration of main-scope dependencies inside of GetIt
+  // initializes the registration of main-scope dependencies inside of GetIt
   _i174.GetIt init({
     String? environment,
     _i526.EnvironmentFilter? environmentFilter,
   }) {
-    _i526.GetItHelper(
-      this,
-      environment,
-      environmentFilter,
-    );
+    final gh = _i526.GetItHelper(this, environment, environmentFilter);
+    final dataModule = _$DataModule();
+    gh.lazySingleton<_i978.NetworkInfo>(() => dataModule.provideNetworkInfo());
     return this;
   }
 }
+
+class _$DataModule extends _i354.DataModule {}
