@@ -1,39 +1,24 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'app_router.gr.dart'; // from the generated file
 
-class AppRouter {
-  Route? generateRoute(RouteSettings settings) {
-    //this arguments to be passed in any screen like this ( arguments as ClassName )
-    final arguments = settings.arguments;
 
-    switch (settings.name) {
-      // case Routes.onBoardingScreen:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const OnboardingScreen(),
-      //   );
-      // case Routes.loginScreen:
-      //   return MaterialPageRoute(
-      //     builder: (_) => BlocProvider(
-      //       create: (context) => getIt<LoginCubit>(),
-      //       child: const LoginScreen(),
-      //     ),
-      //   );
-      // case Routes.signUpScreen:
-      //   return MaterialPageRoute(
-      //     builder: (_) => BlocProvider(
-      //       create: (context) => getIt<SignupCubit>(),
-      //       child: const SignupScreen(),
-      //     ),
-      //   );
-      // case Routes.homeScreen:
-      //   return MaterialPageRoute(
-      //     builder: (_) => BlocProvider(
-      //       create: (context) => HomeCubit(getIt())..getSpecializations(),
-      //       child: const HomeScreen(),
-      //     ),
-        // );
-      // default:
-      //   return null;
-    }
-    return null;
-  }
+@AutoRouterConfig(replaceInRouteName: Routers.replaceInRouteName)
+final class AppRouter extends RootStackRouter {
+  AppRouter() : super(navigatorKey: Routers.navigatorKey);
+
+  @override
+  RouteType get defaultRouteType => const RouteType.adaptive();
+
+  @override
+  final List<AutoRoute> routes = [
+    // AutoRoute(page: HomeRoute.page),
+  ];
+}
+
+final class Routers {
+  Routers._();
+
+  static const String replaceInRouteName = 'Page|Screen,Route';
+  static final navigatorKey = GlobalKey<NavigatorState>();
 }

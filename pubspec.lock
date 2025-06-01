@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "10.1.0+1"
+  auto_route_generator:
+    dependency: "direct dev"
+    description:
+      name: auto_route_generator
+      sha256: "2a5b5bf9c55d4a2098931037dac90921a4663808aed494bb4f134d82d46cb8ec"
+      url: "https://pub.dev"
+    source: hosted
+    version: "10.2.3"
   boolean_selector:
     dependency: transitive
     description:
@@ -484,10 +492,10 @@ packages:
     dependency: "direct dev"
     description:
       name: lean_builder
-      sha256: c45eadd4dd260a3fc14cd6a114f5302080a94ddc448cddb28adca69b9571b99a
+      sha256: "8efb801a43b8454f214e70b173c5d81cb57795f70564c728eda352b396d8f8f6"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.0-alpha.10"
+    version: "0.1.0-alpha.11"
   lints:
     dependency: transitive
     description:
