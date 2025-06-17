@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/core/helpers/constants.dart';
+import 'package:ride_share/core/helpers/app_constants.dart';
 
 extension NonNullString on String? {
   String orEmpty() {
